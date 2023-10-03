@@ -1,0 +1,21 @@
+#include <string.h>
+#include <stdlib.h>
+typedef struct {
+    char name[80];
+    int age;
+} Person;
+
+Person* create_person(const char*name, int age){
+    Person* p =(Person*)malloc(sizeof(Person));
+    strcpy(p->name, name);
+    p->age = age;
+    return p;    
+}
+
+int main()
+{
+    Person* enryo = create_person("Inoue Enryo", 21);
+    printf("%s (%d)\n", enryo->name, enryo->age);
+    free(enryo);
+    return 0;
+}

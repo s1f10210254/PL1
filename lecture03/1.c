@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    printf("Number? ");
+    scanf("%d", &n);
+    switch (n){
+    case 1:
+        printf("%dst\n", n);
+        break;
+    case 21:
+        printf("%dst\n", n);
+        break;
+    case 2:
+        printf("%dnd\n", n);
+        break;
+    case 22:
+        printf("%dnd\n", n);
+        break;    
+    case 3:
+        printf("%drd\n", n);
+        break;
+    case 23:
+        printf("%drd\n", n);
+        break;
+    default:
+        printf("%dth\n", n);
+        break;  
+    }
+    return 0;
+}
